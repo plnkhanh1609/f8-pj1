@@ -47,14 +47,17 @@ a {
 }
 /*=====Header=====*/
 .header {
-    position: relative;
-    min-height: calc(100vh * 3 / 4);
+    position: sticky;
+    top: 0;
+    z-index: 1;
     background-color: #e6f0ff;
 }
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    position: sticky;
+    top: 0;
+    padding: 16px 0;
 }
 .navbar ul {
     display: flex;
@@ -84,10 +87,14 @@ a {
     background-color: rgb(204, 204, 204, 0.3);
     margin-right: 8px;
 }
-
+/*=====Hero===== */
 .hero {
-    margin-top: 130px;
-    padding-bottom: 157px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: #e6f0ff;
+    height: calc(100vh * 3/4 - 72px);
+    
 }
 .hero .infor {
     width: 51%;
